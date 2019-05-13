@@ -22,7 +22,7 @@ actual abstract class ClientLoader {
     lateinit var engine: HttpClientEngineContainer
 
     @get:Rule
-    open val timeout = CoroutinesTimeout.seconds(2 * 60)
+    open val timeout = CoroutinesTimeout.seconds(30)
 
     /**
      * Perform test against all clients from dependencies.
